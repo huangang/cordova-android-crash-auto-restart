@@ -1,0 +1,29 @@
+{
+  "name": "cordova-android-crash-auto-restart",
+  "version": "0.0.1",
+  "description": "Cordova plugin to restart app when happend crash",
+  "cordova": {
+    "id": "cordova-android-crash-auto-restart",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangang/cordova-android-crash-auto-restart.git"
+  },
+  "keywords": [
+    "cordova",
+    "crash",
+    "auto-restart",
+    "terminate",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "huangang <huangang.zhang@gmail.com>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/huangang/cordova-android-crash-auto-restart/issues"
+  },
+  "homepage": "https://github.com/huangang/cordova-android-crash-auto-restart#readme"
+}
