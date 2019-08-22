@@ -14,11 +14,11 @@ module.exports = function (context) {
   fs.writeFileSync(path.join(
     context.opts.projectRoot,
     'platforms/android/app/src/main/java/',
-    packageId.replace('.', '/'),
+    packageId.replace(/\./g, '/'),
     '/MainActivity.java'), mainContent)
   fs.unlinkSync(path.join(
     context.opts.projectRoot,
     'platforms/android/app/src/main/java/',
-    packageId.replace('.', '/'),
+    packageId.replace(/\./g, '/'),
     '/MyExceptionHandler.java'))
 }
