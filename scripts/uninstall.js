@@ -2,7 +2,7 @@ module.exports = function (context) {
   const fs = require('fs')
   const path = require('path')
   const configXml = path.join(context.opts.projectRoot, 'config.xml')
-  const et = context.requireCordovaModule('elementtree')
+  const et = require('elementtree')
 
   const data = fs.readFileSync(configXml).toString()
   const etree = et.parse(data)

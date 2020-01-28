@@ -34,3 +34,4 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 android/.settings
 android/.gradle
+package-lock.json
