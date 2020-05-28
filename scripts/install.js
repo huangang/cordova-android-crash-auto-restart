@@ -6,7 +6,7 @@ module.exports = function (context) {
 
   const data = fs.readFileSync(configXml).toString()
   const etree = et.parse(data)
-  const packageId = etree.getroot().attrib.id
+  const packageId = etree.getroot().attrib.id || etree.getroot().attrib['android-packageName']
   console.log('packageId', packageId)
 
   let mainContent = fs.readFileSync(path.join(context.opts.projectRoot, 'plugins/cordova-android-crash-auto-restart/src/android/MainActivity.java'), 'utf8')
